@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TrackNest — Home Dashboard</title>
+<link rel="stylesheet" href="css/styles.css/styles.css">
+<script src="js/validation.js/validation.js"></script>
+</head>
+<body>
+<div class="app-container">
+  <aside class="sidebar">
+    <a href="index.html" class="brand" style="text-decoration:none;color:inherit"><span class="logo">T</span> TrackNest</a>
+    <div>
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="nav">
+        <a href="index.html" class="active"><span class="ico">▦</span> Home Dashboard</a>
+        <a href="contact.html"><span class="ico">✉</span> Contact Us</a>
+      </nav>
+    </div>
+    <div style="margin-top:auto">
+      <a href="login.html" class="btn secondary" style="width:100%;text-align:center">Sign out</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="crumb">TrackNest Prototype <span style="padding:0 7px;color:#c4cada">/</span> <b>Home Dashboard</b></div>
+      <a href="contact.html" class="btn secondary" style="padding:7px 12px;font-size:12px">Get Help / Contact</a>
+    </header>
+
+    <div class="content">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:25px">
+        <div>
+          <h1>Good morning, Hira 👋</h1>
+          <p class="sub">Here’s what’s happening with your orders today.</p>
+        </div>
+        <button class="btn primary" onclick="showToast('Sample action: Order add modal triggered.')">＋ Add an order</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><div class="stat-top">Total orders <span>▤</span></div><strong>8</strong><span class="sub" style="font-size:11px">Connected stores</span></div>
+        <div class="stat"><div class="stat-top">In transit <span style="color:#c0841e">➜</span></div><strong>3</strong><span style="font-size:11px;color:var(--teal)">● On the way</span></div>
+        <div class="stat"><div class="stat-top">Delivered <span style="color:#14916f">✓</span></div><strong>4</strong><span class="sub" style="font-size:11px">Successfully delivered</span></div>
+        <div class="stat"><div class="stat-top">Attention <span style="color:#c44b58">!</span></div><strong>1</strong><span class="sub" style="font-size:11px">Delayed update</span></div>
+      </div>
+
+      <div class="card">
+        <h2>Active Shipments Overview</h2>
+        <p class="sub" style="font-size:12px;margin-top:4px;margin-bottom:15px">Quick snapshot of your most recent deliveries across TCS and M&P.</p>
+        <div style="display:grid;gap:12px">
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:#f8f9fc;border-radius:10px">
+            <div><b>#TN-2048</b> — Wireless headphones (Urban Cart)</div>
+            <span style="background:#eef1ff;color:#4960e6;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700">In Transit</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:#f8f9fc;border-radius:10px">
+            <div><b>#TN-2047</b> — Everyday tote bag (Mode Avenue)</div>
+            <span style="background:#e5f8f0;color:#158365;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700">Out for Delivery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
